@@ -22,7 +22,9 @@ const validate = values => {
 };
 
 function Create() {
-    const [form, setForm] = useState({});
+    const [form, setForm] = useState({
+        type: 'Perro',
+    });
     const [isFormValid, setIsFormValid] = useState(false);
     const navigate = useNavigate();
     const handleSubmit = (e) => {
